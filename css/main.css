@@ -98,14 +98,17 @@ hr {
     font-size: 16vw;
   }
 
+  #zerda {
+    height: 55vw;
+    width: 55vw;
+  }
+
+  .links {
+    font-size: 5.75vw;
+  }
+
   .footer footer {
     font-size: 3.5vw;
-  }
-}
-
-@media screen and (max-width: 400px) {
-  .links {
-    font-size: 6.45vw;
   }
 }
 
