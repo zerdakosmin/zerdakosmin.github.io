@@ -1,15 +1,39 @@
 body {
   background-color: black;
-  margin: 20px auto;
+  margin: auto;
   width: 80%;
+  height: 100vh;
   font-family: helvetica;
   text-align: center;
 }
 
+main {
+
+}
+
+#title {
+
+}
+
+#contents {
+  /* margin-top: 10vh;
+  display: flex;
+  flex-direction: row;
+  width: 50%; */
+}
+
+.box {
+  /* border: 1px solid red;
+  flex: 1; */
+}
+
 h1 {
-  margin-top: 80px;
-  line-height: 75%;
-  font-size: 4.5em;
+  line-height: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 8vh;
+  padding-bottom: 8vh;
+  font-size: 16vw;
   color: #50F;
   font-family: Lato;
   letter-spacing: 3px;
@@ -23,6 +47,8 @@ h1 {
 }
 
 #zerda {
+  height: 55vw;
+  width: 55vw;
   border-radius: 50%;
   border: 3px solid #00F;
 }
@@ -48,13 +74,29 @@ h1 {
   line-height: 200%;
   text-transform: uppercase;
   letter-spacing: 5px;
-  font-size: 1.6em;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  font-size: 5.75vw;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
 }
 
 a {
   text-decoration: none;
+}
+
+.links a:nth-of-type(1) {
+  color: #AAF;
+}
+
+.links a:nth-of-type(2) {
+  color: #CAF;
+}
+
+.links a:nth-of-type(3) {
+  color: #FAF;
+}
+
+.links a:nth-of-type(4) {
+  color: #FAC;
 }
 
 @keyframes glow {
@@ -73,22 +115,22 @@ hr {
   max-width: 800px;
 }
 
-.footer {
-  position: absolute;
-  bottom: 0;
-  width: 80%;
-  height: 100px;
+footer {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  text-align: center;
   text-align: center;
   color: #555;
   opacity: 0.5;
   text-transform: uppercase;
 }
 
-.footer footer {
-  font-size: 1em;
+footer .footer {
+  font-size: 3.5vw;
 }
 
-.footer a {
+footer a {
   color: #888;
   opacity: 0.5;
 }
@@ -99,37 +141,37 @@ hr {
   left: -9999px;
 }
 
-@media screen and (max-width: 450px) {
+@media (min-width: 450px) {
   h1 {
-    font-size: 16vw;
+    font-size: 4.5em;
   }
 
   #zerda {
-    height: 55vw;
-    width: 55vw;
+    height: 250px;
+    width: 250px;
   }
 
   .links {
-    font-size: 5.75vw;
+    font-size: 1.6em;
   }
 
-  .footer footer {
-    font-size: 3.5vw;
-  }
-}
-
-@media screen and (max-height: 900px) {
-  .footer {
-    position: relative;
-    width: 100%;
-    height: 50px;
-    text-align: center;
+  footer .footer {
+    font-size: 1em;
   }
 }
 
-@media screen and (max-height: 800px) {
-  h1 {
-    margin-top: 5vh;
+@media (min-height: 750px) {
+  #title {
+    padding-top: 4vh;
+  }
+}
+
+@media (min-height: 900px) {
+  footer {
+    position: absolute;
+    bottom: 0;
+    width: 80%;
+    height: 100px;
   }
 }
 
@@ -150,15 +192,14 @@ hr {
 }
 
 #star {
-  font-size: 9em;
-  margin-top: 30vh;
+  font-size: 32vw;
   text-shadow: none;
   animation: starcycle alternate 5s infinite;
 }
 
-@media screen and (max-width: 450px) {
+@media (min-width: 450px) {
   #star {
-    font-size: 32vw;
+    font-size: 9em; 
   }
 }
 

@@ -1,5 +1,5 @@
 let image = document.querySelector("#zerda");
-let footer = document.querySelector(".footer");
+let footer = document.querySelector("footer");
 
 function showCredit() {
   footer.classList.remove("hidden");
