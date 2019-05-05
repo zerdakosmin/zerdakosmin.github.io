@@ -1,17 +1,20 @@
-// currently not in use
+let image = document.querySelector("#zerda");
+let footer = document.querySelector(".footer");
 
 function showCredit() {
-  document.getElementById("credit").style.visibility='visible';
+  footer.classList.remove("hidden");
 }
 
 function hideCredit() {
-  document.getElementById("credit").style.visibility='hidden';
+  footer.classList.add("hidden");
 }
-
-// currently not in use
-
-let image = document.querySelector("#zerda");
 
 image.addEventListener("click", function() {
   console.log("hello");
+
+  if (footer.classList.contains("hidden")) {
+    showCredit();
+  } else {
+    hideCredit();
+  }
 });

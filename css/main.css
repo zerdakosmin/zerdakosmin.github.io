@@ -93,6 +93,12 @@ hr {
   opacity: 0.5;
 }
 
+.hidden {
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+}
+
 @media screen and (max-width: 450px) {
   h1 {
     font-size: 16vw;
