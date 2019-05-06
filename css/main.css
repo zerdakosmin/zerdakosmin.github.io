@@ -210,3 +210,20 @@ footer a {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+#box404 {
+  position: absolute;
+  background-color: transparent;
+}
+
+#box404 h1 {
+  padding-top: 6vw;
+  padding-bottom: 7vw;
+}
+
+@media (min-width: 450px) {
+  #box404 h1 {
+    padding-top: 27px;
+    padding-bottom: 30px;
+  }
+}
