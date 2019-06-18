@@ -7,7 +7,7 @@ body {
   text-align: center;
 }
 
-main {
+/* main {
 
 }
 
@@ -16,16 +16,16 @@ main {
 }
 
 #contents {
-  /* margin-top: 10vh;
+  margin-top: 10vh;
   display: flex;
   flex-direction: row;
-  width: 50%; */
+  width: 50%;
 }
 
 .box {
-  /* border: 1px solid red;
-  flex: 1; */
-}
+  border: 1px solid red;
+  flex: 1;
+} */
 
 h1 {
   line-height: 0;
@@ -38,7 +38,7 @@ h1 {
   font-family: Lato;
   letter-spacing: 3px;
   text-align: center;
-  text-shadow: -1px 0 #53F, 0 1px #53F, 1px 0 #33F, 0 -1px #33F;
+  text-shadow: -1px 0 2px #53F, 0 1px 2px #53F, 1px 0 2px #33F, 0 -1px 2px #33F;
 }
 
 #image {
@@ -51,18 +51,20 @@ h1 {
   width: 55vw;
   border-radius: 50%;
   border: 3px solid #00F;
+  box-shadow: 0 0 10px #00F;
 }
 
 @keyframes imgborder {
-  0%   {border: 3px solid #00F;}
-  25%  {border: 3px solid #80F;}
-  50%  {border: 3px solid #848;}
-  75%  {border: 3px solid #08F;}
-  100% {border: 3px solid #00F;}
+  0%   {border: 3px solid #00F; box-shadow: 0 0 10px #00F;}
+  25%  {border: 3px solid #80F; box-shadow: 0 0 10px #80F;}
+  50%  {border: 3px solid #848; box-shadow: 0 0 10px #848;}
+  75%  {border: 3px solid #08F; box-shadow: 0 0 10px #08F;}
+  100% {border: 3px solid #00F; box-shadow: 0 0 10px #00F;}
 }
 
 #zerda:hover {
   animation: imgborder 10s infinite;
+  
 }
 
 #credit {
@@ -126,7 +128,7 @@ footer {
   text-transform: uppercase;
 }
 
-footer .footer {
+footer .text {
   font-size: 3.5vw;
 }
 
@@ -144,6 +146,7 @@ footer a {
 @media (min-width: 450px) {
   h1 {
     font-size: 4.5em;
+    text-shadow: -1px 0 2px #53F, 0 1px 2px #53F, 1px 0 2px #33F, 0 -1px 2px #33F;
   }
 
   #zerda {
@@ -155,7 +158,7 @@ footer a {
     font-size: 1.6em;
   }
 
-  footer .footer {
+  footer .text {
     font-size: 1em;
   }
 }
