@@ -1,23 +1,32 @@
 let image = document.querySelector("#zerda");
 let title = document.querySelector("#title");
 let footer = document.querySelector("footer");
+let links = document.querySelector("#links");
+let enter = document.querySelector("#enter");
 
-function showCredit() {
-  footer.classList.remove("hidden");
-}
 
-function hideCredit() {
-  footer.classList.add("hidden");
+function toggleCredits() {
+  if (footer.classList.contains("hidden")) {
+    footer.classList.remove("hidden");
+  } else {
+    footer.classList.add("hidden");
+  }
 }
 
 title.addEventListener("click", function() {
-  if (footer.classList.contains("hidden")) {
-    showCredit();
-  } else {
-    hideCredit();
-  }
+  toggleCredits();
 });
 
+function togglePortal() {
+  if (enter.classList.contains("hidden")) {
+    links.classList.add("hidden");
+    enter.classList.remove("hidden");
+  } else {
+    enter.classList.add("hidden");
+    links.classList.remove("hidden");
+  }
+}
+
 image.addEventListener("click", function() {
-  console.log("hello");
+  togglePortal();
 });

@@ -7,15 +7,11 @@ body {
   text-align: center;
 }
 
-/* main {
+/*header {
 
 }
 
-#title {
-
-}
-
-#contents {
+main {
   margin-top: 10vh;
   display: flex;
   flex-direction: row;
@@ -72,7 +68,7 @@ h1 {
   color: #888;
 }
 
-.links {
+#links {
   line-height: 200%;
   text-transform: uppercase;
   letter-spacing: 5px;
@@ -86,19 +82,19 @@ a {
   transition: text-shadow 0.5s;
 }
 
-.links a:nth-of-type(1) {
+#links a:nth-of-type(1) {
   color: #AAF;
 }
 
-.links a:nth-of-type(2) {
+#links a:nth-of-type(2) {
   color: #CAF;
 }
 
-.links a:nth-of-type(3) {
+#links a:nth-of-type(3) {
   color: #FAF;
 }
 
-.links a:nth-of-type(4) {
+#links a:nth-of-type(4) {
   color: #FAC;
 }
 
@@ -110,6 +106,19 @@ a {
 a:hover {
   /* animation: glow 0.5s forwards; */
   text-shadow: 0 0 5px currentColor;
+}
+
+#enter {
+  line-height: 200%;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  font-size: 17.2vw;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+}
+
+#enter a {
+  color: #33F;
 }
 
 hr {
@@ -156,8 +165,12 @@ footer a {
     width: 250px;
   }
 
-  .links {
+  #links {
     font-size: 1.6em;
+  }
+
+  #enter {
+    font-size: 5em;
   }
 
   footer .text {
@@ -166,7 +179,7 @@ footer a {
 }
 
 @media (min-height: 750px) {
-  #title {
+  header {
     padding-top: 4vh;
   }
 }
@@ -216,6 +229,8 @@ footer a {
   transform: translate(-50%, -50%);
 }
 
+/* 404 */
+
 #box404 {
   position: absolute;
   background-color: transparent;
@@ -224,11 +239,79 @@ footer a {
 #box404 h1 {
   padding-top: 6vw;
   padding-bottom: 7vw;
+  text-shadow: 0 0 3px currentColor;
 }
 
 @media (min-width: 450px) {
   #box404 h1 {
     padding-top: 27px;
     padding-bottom: 30px;
+  }
+}
+
+/* Projects */
+
+#projectitle {
+  font-size: 15vw;
+  color: #55F;
+}
+
+.deck {
+  margin-top: 5vh;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.card {
+  border: 3px solid lightblue;
+  border-radius: 3px;
+  width: 30%;
+  max-width: 300px; 
+  min-width: 200px;
+  margin: 30px;
+  padding: 20px;
+  min-height: 200px;
+  background-color: #0A0A0A;
+  color: #FDA;
+}
+
+.card:nth-of-type(1) {
+  border-color: #AAF;
+  box-shadow: 0 0 3px #AAF;
+}
+
+.card:nth-of-type(2) {
+  border-color: #CAF;
+  box-shadow: 0 0 3px #CAF;
+}
+
+.card:nth-of-type(3) {
+  border-color: #FAF;
+  box-shadow: 0 0 3px #FAF;
+}
+
+.card:nth-of-type(4) {
+  border-color: #FAC;
+  box-shadow: 0 0 3px #FAC;
+}
+
+.card p {
+  font-size: 0.9em;
+  line-height: 150%;
+}
+
+.card p:first-of-type {
+  font-size: 1.2em;
+}
+
+.card a {
+  color: #ADF;
+}
+
+@media (min-width: 450px) {
+  #projectitle {
+    font-size: 4.2em;
+    text-shadow: -1px 0 2px #50F, 0 1px 2px #50F, 1px 0 2px #03F, 0 -1px 2px #03F;
   }
 }
